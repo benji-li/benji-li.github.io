@@ -1,23 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 a {
-  color: #1772d0;
+  color: inherit;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
-  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #0ab5ff;
 }
+
 
 body,
 td,
 th,
 tr,
-p,
-a {
+p {
   font-family: 'Lora', Georgia, serif;
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+p {
+  margin-top: 8px;
+}
+
+p.bio {
   font-size: 14px;
 }
 
@@ -28,9 +41,13 @@ strong {
 
 h2 {
   margin: 0;
-  font-weight: normal;
+  margin-bottom: 4px;
+  font-weight: 700;
   font-family: 'Roboto Mono', monospace;
-  font-size: 22px;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0ab5ff;
 }
 
 .papertitle {
@@ -42,14 +59,20 @@ h2 {
 .name {
   padding-top: 20px;
   margin: 0;
+  margin-bottom: 4px;
   font-family: 'Roboto Mono', monospace;
-  font-size: 32px;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: #0ab5ff;
 }
 
 .one {
   width: 160px;
   height: 160px;
   position: relative;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .two {
@@ -71,8 +94,21 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+.award {
+  display: inline-block;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0ab5ff;
+  border: 1.5px solid #0ab5ff;
+  border-radius: 4px;
+  padding: 1px 7px;
+}
+
 .colored-box {
-    color: black;
+    color: #333333;
     padding: 20px;
     display: inline-block;
     border-radius: 10px;

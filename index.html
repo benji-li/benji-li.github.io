@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>BENJI LI</title>
+    <title>Benji Li</title>
 
     <meta name="author" content="Benji Li">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,24 +21,23 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Benji Li
+                <p class="name" style="text-align: left;">
+                  BENJI LI
                 </p>
-                <p>
-                  Hello! I am a MS Robotics student at Carnegie Mellon University, advised by <a href="https://www.cs.cmu.edu/~sycara/">Prof. Katia Sycara</a>.
+                <p class="bio">
+                  Hello! I am a <strong>MS Robotics</strong> student at <strong>Carnegie Mellon University</strong>, advised by <a href="https://www.cs.cmu.edu/~sycara/">Prof. Katia Sycara</a>.
 
                   Previously, I completed my undergraduate studies in mechatronics engineering at the University of British Columbia, where I was advised by <a href="https://mech.ubc.ca/machiel-van-der-loos/">Prof. Mike Van der Loos</a> in the <a href="https://caris.mech.ubc.ca/">CARIS Lab</a>.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:benjil@cs.cmu.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="data/YourName-CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="data/YourName-bio.txt">Bio</a> &nbsp;/&nbsp;
+                  <a href="data/CV.pdf">CV</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=ZrsZJKkAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
                   <a href="https://github.com/benji-li">Github</a>
                 </p>
               </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/YourName.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/YourName.jpg" class="hoverZoomLink"></a>
+              <td style="padding:2.5%;width:25%;max-width:25%">
+                <a href="images/pfp.png" style="display:block;border-radius:12px;overflow:hidden;"><img style="width:100%;max-width:100%;object-fit:cover;transform:scale(3.5) translateY(12%) translateX(0%);transform-origin:center center;" alt="profile photo" src="images/pfp.png" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -49,7 +48,7 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>RESEARCH</h2>
                 <p>
-                  I work on learning-based algorithms to train agents for robust performance in environments with multiple interacting agents, including multi-robot systems and human-robot collaborative teams. To accomplish these tasks, I utilize tools from Multi-Agent Reinforcement Learning (MARL), imitation learning, and robotic control. In particular, I am currently working on developing methods that equip robots with both <strong>adaptivity</strong> and <strong>proactivity</strong> in their interactions in uncertain environments with evolving tasks and imperfect teammates.
+                  I work on learning-based algorithms to train agents for robust performance in environments with multiple interacting agents, including multi-robot systems and human-robot collaborative teams. To accomplish these tasks, I utilize tools from <strong>multi-agent reinforcement learning (MARL)</strong>, <strong>imitation learning</strong>, and <strong>optimal control</strong>. In particular, I am currently working on developing methods that equip robots with both <strong>adaptivity</strong> and <strong>proactivity</strong> in their interactions in uncertain environments with evolving tasks and complex imperfect teammates.
                 </p>
               </td>
             </tr>
@@ -58,93 +57,147 @@
           <!-- ===================== PAPERS ===================== -->
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
-<!-- PAPER TEMPLATE: video thumbnail (hover reveals video, static image by default) -->
-<tr onmouseout="papershortname_stop()" onmouseover="papershortname_start()">
+<tr>
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="one">
-      <div class="two" id='papershortname_image'><video  width=100% height=100% muted autoplay loop>
-      <source src="images/papershortname.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+      <img src='images/dnm.png' width="160">
+    </div>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a>
+      <span class="papertitle">Decompose-and-Merge Reinforcement Learning for Complex Tasks</span>
+    </a>
+    <br>
+    <a>Andrew Ni</a>,
+    <strong>Benjamin Li</strong>,
+    <a>Hossein Nourkhiz Mahjoub</a>,
+    <a>Vaishnav Tadiparthi</a>,
+    <a>Katia Sycara</a>,
+    <a>Woojun Kim</a>
+    <br>
+    <em>Under Review</em>, 2026
+    <br>
+    <!-- <a href="https://your-project-page.github.io/">project page</a> / -->
+    <!-- <a href="https://arxiv.org/pdf/2511.12754">paper</a> /
+    <a href="https://github.com/benji-li/talents-zsc/">code</a> -->
+    <p></p>
+    <!-- <p>
+      One or two sentence description of what this paper does and why it matters.
+    </p> -->
+  </td>
+</tr>
+
+<tr onmouseout="talents_stop()" onmouseover="talents_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='talents_image'><video width=100% height=100% muted autoplay loop>
+        <source src="images/talents.mp4" type="video/mp4">
       </video></div>
-      <img src='images/papershortname.jpg' width="160">
+      <video width=100% height=100% muted>
+        <source src="images/talents.mp4" type="video/mp4">
+      </video>
     </div>
     <script type="text/javascript">
-      function papershortname_start() {
-        document.getElementById('papershortname_image').style.opacity = "1";
-      }
-
-      function papershortname_stop() {
-        document.getElementById('papershortname_image').style.opacity = "0";
-      }
-      papershortname_stop()
+      function talents_start() { document.getElementById('talents_image').style.opacity = "1"; }
+      function talents_stop() { document.getElementById('talents_image').style.opacity = "0"; }
+      talents_stop()
     </script>
   </td>
   <td style="padding:20px;width:75%;vertical-align:middle">
-    <a href="https://your-project-page.github.io/">
-      <span class="papertitle">Your Paper Title Here</span>
+    <a href="https://arxiv.org/pdf/2511.12754">
+      <span class="papertitle">Adaptively Coordinating with Novel Partners via Learned Latent Strategies</span>
     </a>
     <br>
-    <a href="https://coauthor1-page.com/">Coauthor One</a>,
-    <strong>Your Name</strong>,
-    <a href="https://coauthor2-page.com/">Coauthor Two</a>
-    <br>
-    <em>CVPR</em>, 2025
-    <br>
-    <a href="https://your-project-page.github.io/">project page</a> /
-    <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a> /
-    <a href="https://github.com/you/paper-repo">code</a>
-    <p></p>
-    <p>
-      One or two sentence description of what this paper does and why it matters.
-    </p>
-  </td>
-</tr>
-
-
-<!-- PAPER TEMPLATE (highlighted): before/after image thumbnail, highlighted row -->
-<tr onmouseout="papershortname2_stop()" onmouseover="papershortname2_start()" bgcolor="#ffffd0">
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='papershortname2_image'>
-        <img src='images/papershortname2_after.jpg' width=100%>
-      </div>
-      <img src='images/papershortname2_before.jpg' width=100%>
-    </div>
-    <script type="text/javascript">
-      function papershortname2_start() {
-        document.getElementById('papershortname2_image').style.opacity = "1";
-      }
-
-      function papershortname2_stop() {
-        document.getElementById('papershortname2_image').style.opacity = "0";
-      }
-      papershortname2_stop()
-    </script>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://your-project-page2.github.io/">
-      <span class="papertitle">Another Highlighted Paper Title</span>
-    </a>
-    <br>
-    <strong>Your Name</strong>,
-    <a href="https://coauthor-page.com/">Coauthor Name</a>
+    <strong>Benjamin Li</strong>,
+    <a>Shuyang Shi</a>,
+    <a>Lucia Romero</a>,
+    <a>Huao Li</a>,
+    <a>Yaqi Xie</a>,
+    <a>Woojun Kim</a>,
+    <a>Stefanos Nikolaidis</a>,
+    <a>Michael Lewis</a>,
+    <a>Katia Sycara</a>,
+    <a>Simon Stepputtis</a>
     <br>
     <em>NeurIPS</em>, 2025
     <br>
-    <a href="https://your-project-page2.github.io/">project page</a>
-    /
-    <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a>
+    <!-- <a href="https://your-project-page.github.io/">project page</a> / -->
+    <a href="https://arxiv.org/pdf/2511.12754">paper</a> /
+    <a href="https://github.com/benji-li/talents-zsc/">code</a>
     <p></p>
-    <p>
+    <!-- <p>
       One or two sentence description of what this paper does and why it matters.
-    </p>
+    </p> -->
   </td>
 </tr>
 
 
-<!-- PAPER TEMPLATE: static image thumbnail, bibtex link, no project page -->
 <tr>
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <img src='images/rss.png' width="160">
+    </div>
+  </td>
+  <td style="padding:20px;width:80%;vertical-align:middle">
+    <a href="https://arxiv.org/pdf/2507.05244?">
+      <span class="papertitle">Modeling Latent Partner Strategies for Adaptive Zero-Shot Human-Agent Collaboration</span>
+    </a>
+    <br>
+    <strong>Benjamin Li</strong>,
+    <a>Shuyang Shi</a>,
+    <a>Lucia Romero</a>,
+    <a>Huao Li</a>,
+    <a>Yaqi Xie</a>,
+    <a>Woojun Kim</a>,
+    <a>Stefanos Nikolaidis</a>,
+    <a>Michael Lewis</a>,
+    <a>Katia Sycara</a>,
+    <a>Simon Stepputtis</a>
+
+    <br>
+    <em>GenAI-HRI Workshop @ RSS</em>, 2025
+    <br>
+    <span class="award">🏆 Best Paper Award</span>
+    <br>
+    <a href="https://arxiv.org/pdf/2507.05244?">paper</a>
+    /
+    <a href="https://github.com/benji-li/talents-zsc/">code</a>
+    <p></p>
+  </td>
+</tr>
+<tr>
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <img src='images/thri.png' width="160">
+    </div>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://dl.acm.org/doi/full/10.1145/3737892">
+      <span class="papertitle">How Can Everyday Users Efficiently Teach Robots by Demonstration?</span>
+    </a>
+    <br>
+    <a>Maram Sakr</a>,
+    <a>Zhikai Zhang</a>,
+    <strong>Benjamin Li</strong>,
+    <a>Haomiao Zhang</a>,
+    <a>HF Machiel Van der Loos</a>,
+    <a>Dana Kulić</a>,
+    <a>Elizabeth Croft</a>
+    <br>
+    <em>ACM Transactions on Human-Robot Interaction</em>, 2025
+    <br>
+    <!-- <a href="https://your-project-page.github.io/">project page</a> / -->
+    <a href="https://dl.acm.org/doi/full/10.1145/3737892">paper</a> /
+    <a href="https://github.com/ZhikaiZhang1/Information-Entropy-in-LfD">code</a>
+    <p></p>
+    <!-- <p>
+      One or two sentence description of what this paper does and why it matters.
+    </p> -->
+  </td>
+</tr>
+
+<!-- PAPER TEMPLATE: static image thumbnail, bibtex link, no project page -->
+<!-- <tr>
   <td style="padding:16px;width:20%;vertical-align:middle">
     <img src="images/papershortname3.jpg" alt="paper thumbnail" width="160" height="160" style="border-style: none">
   </td>
@@ -160,12 +213,78 @@
     <a href="data/YourNameVenue2024.bib">bibtex</a>
     <p>One sentence description.</p>
   </td>
+</tr> -->
+
+
+          </tbody></table>
+
+          <!-- ===================== PROJECTS ===================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Projects</h2>
+                <!-- <p>
+                  Some personal and course projects.
+                </p> -->
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+<tr>
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <img src='images/dsrl.gif' width="160">
+    </div>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a>
+      <span class="papertitle">Trajectory-Guided Diffusion Policy for Manipulation</span>
+    </a>
+    <!-- <br> -->
+    <!-- <strong>Benjamin Li</strong>,
+    <a href="https://collaborator-page.com/">Collaborator Name</a> -->
+    <br>
+    <em>CMU 10-703 Deep Reinforcement Learning</em>, 2025
+    <br>
+    <a href="data/deeprl.pdf">report</a>
+    <p></p>
+    <p>
+      Diffusion-based imitation learning method for non-prehensile robotic manipulation, using learned
+      value-based guidance to steer denoising gradients toward desired goals.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <img src='images/ocrl.png' width="160">
+    </div>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a>
+      <span class="papertitle">Whole-Body MPPI Control of a Wheeled Quadruped</span>
+    </a>
+    <!-- <br> -->
+    <!-- <strong>Benjamin Li</strong>,
+    <a href="https://collaborator-page.com/">Collaborator Name</a> -->
+    <br>
+    <em>CMU 16-745 Optimal Control and Reinforcement Learning</em>, 2025
+    <br>
+    <a href="data/ocrl.pdf">report</a>
+    <p></p>
+    <p>
+      Whole-body Model Predictive Path Integral (MPPI) control of a wheeled quadruped robot (Unitree Go2W) in MuJoCo,
+      enabling real-time dynamic locomotion across various terrains and obstacles.
+    </p>
+  </td>
 </tr>
 
 
           </tbody></table>
 
           <!-- ===================== MISCELLANEA ===================== -->
+          <!--
           <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
             <tr>
               <td>
@@ -175,7 +294,6 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <!-- Micropapers / short writeups -->
             <tr>
               <td align="center" style="padding:16px;width:20%;vertical-align:middle">
                 <div class="colored-box" style="background-color: #fcb97d;">
@@ -187,7 +305,6 @@
               </td>
             </tr>
 
-            <!-- Recorded talks -->
             <tr>
               <td align="center" style="padding:16px;width:20%;vertical-align:middle">
                 <div class="colored-box" style="background-color: #aaba9e;">
@@ -199,7 +316,6 @@
               </td>
             </tr>
 
-            <!-- Academic service -->
             <tr>
               <td align="center" style="padding:16px;width:20%;vertical-align:middle">
                 <div class="colored-box" style="background-color: #c6b89e;">
@@ -211,7 +327,6 @@
               </td>
             </tr>
 
-            <!-- Teaching -->
             <tr>
               <td align="center" style="padding:16px;width:20%;vertical-align:middle">
                 <div class="colored-box" style="background-color: #edd892;">
@@ -224,6 +339,7 @@
             </tr>
 
           </tbody></table>
+          -->
 
           <!-- ===================== FOOTER ===================== -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -231,7 +347,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Template from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.
+                  Template forked from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.
                 </p>
               </td>
             </tr>
